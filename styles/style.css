@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Merienda:wght@400;700&display=swap');
+
+html{
+    font-family: athiti;
+    font-size: 18px;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+/*  */
+/*  */
+/* HEADER */
+/*  */
+/*  */
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#ebe3db, white);
+    border-bottom: 1px solid #4c4343;
+}
+header .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+header img{
+    width: 20%;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header i{
+    color: #950000; 
+    font-size: 10px;
+}
+/*  */
+/*  */
+/* NAV */
+/*  */
+/*  */
+nav{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+nav ul li{
+    background: #ebe3db;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #4c4343;
+    padding: 10px 0;
+}
+nav ul li a{
+    color: #4c4343;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: #4c4343;
+}
+nav ul li:hover>a{
+    cursor: pointer;
+    color: whitesmoke;
+}
+/*  */
+/*  */
+/* SLIDER */
+/*  */
+/*  */
+.slider{
+    width: 90%;
+    margin: 30px auto;
+}
+.slick-prev{
+    left: 25px;
+    z-index: 2;
+}
+.slick-next{
+    right: 20px;
+    z-index: 3;
+}
+/*  */
+/*  */
+/* PRESENTATTION */
+/*  */
+/*  */
+.presentation .titre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.presentation div h2{
+    font-size: 25px;
+    font-family: merienda;
+    color: #4c4343;   
+}
+.presentation  div i{
+    font-size: 10px;
+    color: #950000;
+}
+.presentation{
+    width: 90%;
+    margin: auto;
+}
+.presentation img{
+    width: 100%;
+}
+.presentation p{
+    font-size: 15px;
+}
+/*  */
+/*  */
+/* MENU */
+/*  */
+/*  */
+.special{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.special h2{
+    font-size: 25px;
+    font-family: merienda;
+    color: #4c4343; 
+}
+.menu div h3{
+    font-size: 20px;
+    font-family: merienda;
+    color: #4c4343;
+}
+i{
+    font-size: 10px;
+    color: #950000;
+}
+.menu article{
+    width: 90%;
+    height: fit-content;
+    background-color: #ebe3db;
+    margin: 0 auto 20px;
+    padding-bottom: 20px;
+    
+}
+.menu article .price{
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+.menu article .price img{
+    width: 100%;
+    vertical-align: middle;
+}
+.menu article .price .back{ 
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu article .price .back:hover{
+    opacity: 1;
+}
+.menu article .price .back div{
+    color: white;
+    width: 85%;
+    height: 80%;
+    border: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu article .price .back div p{
+    line-height: 1;
+    margin: 0;
+    font-size: 20px;
+    font-style: italic;
+}
+.menu article .price .back div .montant{
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+}
+.menu article ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menu article ul li{
+    color: #4c4343;
+    border-bottom: 1px dashed #4c4343;
+    padding: 10px 5px;
+    font-size: 15px;
+    
+}
+.menu article ul li::before{
+    content: "★";
+    color: #950000;
+    font-size: 10px;
+    padding: 5px;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #4c4343;
+    width: 95%;
+    margin: 2.5%;
+    border: none;
+}
+article button .fork{
+    height: 20px;
+    width: 20px;
+}
+/*  */
+/*  */
+/* FOOTER */
+/*  */
+/*  */
+footer{
+    background-image: url(../instructions/ressources/images/footer-bg.jpg);
+    color: white;
+    width: 100%;
+    padding: 40px 0;
+}
+footer h4{
+    font-size: 18px;
+    font-family: merienda;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed white;
+    padding: 10px 0;
+}
+footer p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 0.5;
+}
+footer .tel{
+    line-height: 3;
+}
+footer section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    
+}
+footer section i{
+    color: white;
+    font-size: 25px;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* TABLETTE */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width:780px){
+    header nav ul{
+        flex-direction: row;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer section{
+        width: 25%;
+    }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* DESKTOP */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width:980px) and (max-width:1400px) {
+    header{
+        flex-direction: row;
+        justify-content: center;
+    }
+    header .logo{
+        flex-direction: row;
+    }
+    nav ul{
+        justify-content: center;
+        gap: 20px;
+    }
+    nav ul li{
+        width: fit-content;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .presentation article{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+    .presentation article img{
+        width: 40%;
+        height: fit-content;
+    }
+    .presentation article p{
+        margin-top: 5px;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu article{
+        width: 30%;
+    }
+}

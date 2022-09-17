@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Merienda:wght@400;700&display=swap');
+
+html{
+    font-family: athiti;
+    font-size: 18px;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+/*  */
+/*  */
+/* HEADER */
+/*  */
+/*  */
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#ebe3db, white);
+    border-bottom: 1px solid #4c4343;
+}
+header .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+header img{
+    width: 20%;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+header i{
+    color: #950000; 
+    font-size: 10px;
+}
+/*  */
+/*  */
+/* NAV */
+/*  */
+/*  */
+nav{
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 0;
+}
+nav ul li{
+    background: #ebe3db;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #4c4343;
+    padding: 10px 0;
+}
+nav ul li a{
+    color: #4c4343;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: #4c4343;
+}
+nav ul li:hover>a{
+    cursor: pointer;
+    color: whitesmoke;
+}
+/*  */
+/*  */
+/* SECTION */
+/*  */
+/*  */
+section{
+    width: 90%;
+    margin: auto;
+}
+h2{
+    color: #4c4343;
+    font-size: 25px;
+    font-family: merienda;
+}
+i{
+    color: #950000;
+    font-size: 10px;
+}
+section article > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+section article > p{
+    text-align: center;
+}
+/*  */
+/*  */
+/* FIELDSET */
+/*  */
+/*  */
+fieldset{
+    background-color: #ebe3db;
+    border: none;
+
+}
+fieldset .survey{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+fieldset article{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+}
+fieldset article div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+fieldset article div label{
+    width: 100%;
+}
+.before{
+    position: relative;
+}
+.before::before{
+    content: "*";
+    border-bottom: 1px dotted #4c4343;
+    color: #950000;
+    position: absolute;
+    left: -15px;
+}
+input{
+    width: 95%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    width: 100%;
+}
+.detail{
+    justify-content: space-evenly;
+}
+button{
+    color: white;
+    border: none;
+    background-color: #4c4343;
+    border-radius: 5px;
+    width: 50%;
+    margin: 40px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all 0.5s;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 1px 10px black;
+}
+.map div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+h3{
+    font-family: merienda;
+    font-size: 20px;
+}
+.map{
+    padding: 20px 0;
+}
+/*  */
+/*  */
+/* FOOTER */
+/*  */
+/*  */
+footer{
+    background-image: url(../instructions/ressources/images/footer-bg.jpg);
+    color: white;
+    width: 100%;
+    padding: 40px 0;
+}
+footer h4{
+    font-size: 18px;
+    font-family: merienda;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed white;
+    padding: 10px 0;
+}
+footer p{
+    font-size: 16px;
+    text-align: center;
+    line-height: 0.5;
+}
+footer .tel{
+    line-height: 3;
+}
+footer section div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    
+}
+footer section i{
+    color: white;
+    font-size: 25px;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* TABLETTE */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width:780px) {
+    nav ul{
+        flex-direction: row;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    footer section{
+        width: 30%;
+        margin: 0; 
+    }
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* DESKTOP */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media screen and (min-width:980px) and (max-width:1400px) {
+    header{
+        flex-direction: row;
+        justify-content: center;
+    }
+    header .logo{
+        flex-direction: row;
+    }
+    nav ul{
+        justify-content: center;
+        gap: 20px;
+    }
+    nav ul li{
+        width: fit-content;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    fieldset{
+        width: 70%;
+        margin: auto;
+    }
+}
